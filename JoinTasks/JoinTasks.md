@@ -7,3 +7,12 @@ on dep.Dnum = Emp.Dno
 ```
 output:
 ![](../images/1.png)
+
+#### 2. Display the names of departments and the names of the projects they control. 
+```
+select dep.Dname, Proj.Pname from Departments dep inner join Project Proj
+on dep.Dnum = proj.Dnum
+
+``` 
+output:
+![](../images/2.PNG)
