@@ -17,3 +17,12 @@ on dep.Dnum = proj.Dnum
 output:
 ![](../images/2.PNG)
 
+#### 3. Display full data of all dependents, along with the full name of the employee they depend on. 
+```
+SELECT dep.* , Emp.Fname + ' ' + Emp.Lname as Full_Name from Departments dep left join Employee Emp 
+on dep.Dnum  = Emp.Dno   --Q: can grouped all employee name in the same cell 
+```
+output:
+
+![](../images/3.PNG)
+
