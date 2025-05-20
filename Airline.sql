@@ -1,118 +1,124 @@
-USE [master]
-GO
+create database airline
+use airline
 
-/****** Object:  Database [airline]    Script Date: 5/14/2025 2:43:31 PM ******/
-CREATE DATABASE [airline]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'airline', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\airline.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'airline_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\airline_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
- WITH CATALOG_COLLATION = DATABASE_DEFAULT, LEDGER = OFF
-GO
+create table airport
+(
+airport_code varchar(6) primary key,
+city varchar(10) not null,
+state varchar(10) not null,
+name varchar(10) not null
+);
+create table flight_leg
+(
+let_no int not null,
+airport_code varchar(6) not null,
+number int not null,
+secheduled_arr_time time not null,
+secheduled_dep_time time not null,
+primary key(let_no, airport_code, number)
+);
 
-IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
-begin
-EXEC [airline].[dbo].[sp_fulltext_database] @action = 'enable'
-end
-GO
+create table airplane_type
+(
+type_name varchar(10) primary key,
+max_seat int not null,
+comapny varchar(20) not null
+);
 
-ALTER DATABASE [airline] SET ANSI_NULL_DEFAULT OFF 
-GO
+create table AirplaneType_Airport
+(
+airport_code varchar(6) not null, 
+type_name varchar(10) not null,
+primary key(airport_code, type_name)
+);
 
-ALTER DATABASE [airline] SET ANSI_NULLS OFF 
-GO
+create table flight
+(
+number int primary key,
+airline varchar(20) not null, 
+weekdays int not null
+);
 
-ALTER DATABASE [airline] SET ANSI_PADDING OFF 
-GO
+create table fare
+(
+code int not null, 
+number int not null,
+restrictions varchar(20) not null,
+amount decimal (4,2) check(amount<01.00) not null
+primary key(code, number)
+);
 
-ALTER DATABASE [airline] SET ANSI_WARNINGS OFF 
-GO
+create table airplane 
+(
+airplane_id int primary key,
+type_name varchar(10) not null,
+total_no_of_seats int not null
+);
 
-ALTER DATABASE [airline] SET ARITHABORT OFF 
-GO
+create table seat
+(
+seat_no int not null,
+date date not null,
+let_no int not null,
+airplane_id int not null,
+primary key (seat_no,date)
+);
 
-ALTER DATABASE [airline] SET AUTO_CLOSE OFF 
-GO
+create table leg_Instance
+(
+date date not null,
+airport_code varchar(6) not null,
+let_no int not null,
+airplane_id int not null,
+number int not null,
+primary key (date, airport_code, let_no)
+);
 
-ALTER DATABASE [airline] SET AUTO_SHRINK OFF 
-GO
+-- foriegn key 
 
-ALTER DATABASE [airline] SET AUTO_UPDATE_STATISTICS ON 
-GO
+alter table flight_leg
+add foreign key (number) references flight(number)
 
-ALTER DATABASE [airline] SET CURSOR_CLOSE_ON_COMMIT OFF 
-GO
+alter table flight_leg
+add foreign key (airport_code) references airport(airport_code)
 
-ALTER DATABASE [airline] SET CURSOR_DEFAULT  GLOBAL 
-GO
+alter table AirplaneType_Airport
+add foreign key (airport_code) references airport(airport_code)
 
-ALTER DATABASE [airline] SET CONCAT_NULL_YIELDS_NULL OFF 
-GO
+alter table AirplaneType_Airport
+add foreign key (type_name) references airplane_type(type_name)
 
-ALTER DATABASE [airline] SET NUMERIC_ROUNDABORT OFF 
-GO
+alter table fare 
+add foreign key(number) references flight(number)
 
-ALTER DATABASE [airline] SET QUOTED_IDENTIFIER OFF 
-GO
+alter table airplane
+add foreign key (type_name) references airplane_type(type_name)
 
-ALTER DATABASE [airline] SET RECURSIVE_TRIGGERS OFF 
-GO
+-- add column to saet table 
+alter table seat
+add airport_code varchar(6)
 
-ALTER DATABASE [airline] SET  ENABLE_BROKER 
-GO
+alter table seat
+add foreign key (date, airport_code, let_no) references leg_instance(date, airport_code, let_no)
 
-ALTER DATABASE [airline] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
-GO
+alter table leg_instance
+add foreign key (airplane_id) references airplane(airplane_id)
 
-ALTER DATABASE [airline] SET DATE_CORRELATION_OPTIMIZATION OFF 
-GO
+alter table leg_instance
+add foreign key (airport_code) references airport(airport_code)
 
-ALTER DATABASE [airline] SET TRUSTWORTHY OFF 
-GO
+-- add date column to flight_leg table
+alter table flight_leg
+add date0 date
 
-ALTER DATABASE [airline] SET ALLOW_SNAPSHOT_ISOLATION OFF 
-GO
+--ALTER TABLE flight_leg
+--DROP COLUMN FlightLeg_Date;
 
-ALTER DATABASE [airline] SET PARAMETERIZATION SIMPLE 
-GO
+EXEC sp_rename 'leg_instance.date', 'date0', 'COLUMN';
+EXEC sp_rename 'seat.date', 'date0', 'COLUMN';
 
-ALTER DATABASE [airline] SET READ_COMMITTED_SNAPSHOT OFF 
-GO
 
-ALTER DATABASE [airline] SET HONOR_BROKER_PRIORITY OFF 
-GO
+alter table leg_instance
+add foreign key (let_no, airport_code, number) references flight_leg(let_no, airport_code,number)
 
-ALTER DATABASE [airline] SET RECOVERY FULL 
-GO
-
-ALTER DATABASE [airline] SET  MULTI_USER 
-GO
-
-ALTER DATABASE [airline] SET PAGE_VERIFY CHECKSUM  
-GO
-
-ALTER DATABASE [airline] SET DB_CHAINING OFF 
-GO
-
-ALTER DATABASE [airline] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
-GO
-
-ALTER DATABASE [airline] SET TARGET_RECOVERY_TIME = 60 SECONDS 
-GO
-
-ALTER DATABASE [airline] SET DELAYED_DURABILITY = DISABLED 
-GO
-
-ALTER DATABASE [airline] SET ACCELERATED_DATABASE_RECOVERY = OFF  
-GO
-
-ALTER DATABASE [airline] SET QUERY_STORE = ON
-GO
-
-ALTER DATABASE [airline] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 30), DATA_FLUSH_INTERVAL_SECONDS = 900, INTERVAL_LENGTH_MINUTES = 60, MAX_STORAGE_SIZE_MB = 1000, QUERY_CAPTURE_MODE = AUTO, SIZE_BASED_CLEANUP_MODE = AUTO, MAX_PLANS_PER_QUERY = 200, WAIT_STATS_CAPTURE_MODE = ON)
-GO
-
-ALTER DATABASE [airline] SET  READ_WRITE 
-GO
 
