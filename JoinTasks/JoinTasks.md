@@ -91,7 +91,17 @@ left JOIN Project pro ON pro.Pnumber = w.Pno
 
 Output:
 ![](./images/9.PNG)
+#### 10 . For each project located in Cairo, display the project number, controlling department name, manager's last name, address, and birthdate.
+```
+select pro.Pnumber, pro.Pname, emp.Lname, emp.Address, emp.Bdate
+FROM Employee emp
+left JOIN Works_for w ON emp.SSN = w.ESSN
+left JOIN Project pro ON pro.Pnumber = w.Pno
+where pro.City ='Cairo';
+```
 
+Output:
+![](./images/10.PNG)
 
 
 
