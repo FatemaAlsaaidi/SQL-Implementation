@@ -79,6 +79,20 @@ where sup.Fname + ' ' + sup.Lname = 'Kamel Mohamed';
 Output:
 ![](./images/8.PNG)
 
+#### 9. Retrieve the names of employees and the names of the projects they work on, sorted by project name. 
+```
+SELECT emp.Fname + ' ' + emp.Lname AS FullName, pro.Pname
+FROM Employee emp
+left JOIN Works_for w ON emp.SSN = w.ESSN
+left JOIN Project pro ON pro.Pnumber = w.Pno
+
+
+```
+
+Output:
+![](./images/9.PNG)
+
+
 
 
 
