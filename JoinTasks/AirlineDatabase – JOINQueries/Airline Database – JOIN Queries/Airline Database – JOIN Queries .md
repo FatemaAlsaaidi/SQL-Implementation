@@ -7,3 +7,18 @@ on airport.airport_code = f_leg.airport_code
 
 ```
 ![](images/1.jpg)
+
+##### 2. Display all flight numbers and the names of the departure and arrival airports. 
+```
+SELECT 
+    f.number AS flight_number,
+    airport.city AS city
+FROM flight f
+INNER JOIN flight_leg f_leg 
+    ON f.number = f_leg.number
+INNER JOIN airport 
+    ON f_leg.airport_code = airport.airport_code
+
+
+```
+![](images/2.jpg)
