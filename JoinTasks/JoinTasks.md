@@ -113,7 +113,16 @@ where emp.SSN = Manag.Superssn
 Output:
 ![](./images/11.PNG)
 
-#### 12. 
+#### 12. Display all employees and their dependents, even if some employees have no dependents. 
+```
+SELECT emp.*, dep.*
+FROM Employee emp
+LEFT JOIN Dependent dep ON emp.SSN = dep.ESSN;
+
+```
+Output:
+![](./images/12.PNG)
+
 
 
 
