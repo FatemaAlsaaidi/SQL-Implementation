@@ -27,5 +27,16 @@ on Emp.SSN  = dep.ESSN
 Output:
 ![](./images/3.PNG)
 
+#### 4. Display the project ID, name, and location of all projects located in Cairo or Alex. 
+```
+select  Pnumber, Pname, Plocation  from Project where City = 'Cairo' OR City ='Alex'
+
+```
+
+Output:
+![](./images/4.PNG)
+
+
+
 
 
