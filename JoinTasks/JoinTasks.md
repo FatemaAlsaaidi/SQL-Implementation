@@ -17,3 +17,15 @@ on dep.Dnum = proj.Dnum
 output:
 ![](./images/2.PNG)
 
+#### 3.Display full data of all dependents, along with the full name of the employee they depend on. 
+```
+SELECT dep.* , Emp.Fname + ' ' + Emp.Lname as Full_Name from Dependent dep left join Employee Emp 
+on Emp.SSN  = dep.ESSN
+
+```
+
+Output:
+![](./images/3.PNG)
+
+
+
