@@ -103,6 +103,18 @@ where pro.City ='Cairo';
 Output:
 ![](./images/10.PNG)
 
+#### 11. Display all data of managers in the company.
+```
+select Manag.* 
+from Employee emp, Employee Manag
+where emp.SSN = Manag.Superssn
+
+```
+Output:
+![](./images/11.PNG)
+
+
+
 
 
 
