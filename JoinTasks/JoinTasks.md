@@ -44,6 +44,18 @@ select * from project where Pname like 'A%'
 Output:
 ![](./images/5.PNG)
 
+#### 6. Display the IDs and names of employees in department 30 with a salary between 1000 and 2000 LE. 
+```
+select SSN, Fname + ' ' + Lname as full_name, Salary 
+from Employee 
+where Dno = 30 and Salary between 1000 and 2000;
+```
+
+Output:
+![](./images/6.PNG)
+
+
+
 
 
 
