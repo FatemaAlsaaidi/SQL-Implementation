@@ -36,6 +36,16 @@ select  Pnumber, Pname, Plocation  from Project where City = 'Cairo' OR City ='A
 Output:
 ![](./images/4.PNG)
 
+#### 5. Display all project data where the project name starts with the letter 'A'. 
+```
+select * from project where Pname like 'A%'
+
+```
+Output:
+![](./images/5.PNG)
+
+
+
 
 
 
