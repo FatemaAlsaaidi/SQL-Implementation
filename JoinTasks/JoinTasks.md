@@ -68,6 +68,18 @@ WHERE emp.Dno = 10
 Output:
 ![](./images/7.PNG)
 
+#### 8. Find the names of employees who are directly supervised by "Kamel Mohamed". 
+```		
+SELECT emp.Fname + ' ' + emp.Lname AS FullName
+FROM Employee emp left Join Employee sup
+on emp.SSN = sup.Superssn
+where sup.Fname + ' ' + sup.Lname = 'Kamel Mohamed';
+```
+
+Output:
+![](./images/8.PNG)
+
+
 
 
 
