@@ -1,4 +1,4 @@
-# Company Database � JOIN Queries
+﻿# Company Database – JOIN Queries
 ### This document contains SQL queries that utilize JOIN operations to retrieve data from the Company database.
 #### 1. Display the department ID, department name, manager ID, and the full name of the manager.
 ```
@@ -53,6 +53,24 @@ where Dno = 30 and Salary between 1000 and 2000;
 
 Output:
 ![](./images/6.PNG)
+
+#### 7. Retrieve the names of employees in department 10 who work ≥ 10 hours/week on the "AL Rabwah" project. 
+```
+SELECT emp.Fname + ' ' + emp.Lname AS FullName
+FROM Employee emp
+inner JOIN Works_for w ON emp.SSN = w.ESSN
+inner JOIN Project pro ON pro.Pnumber = w.Pno
+WHERE emp.Dno = 10 
+  AND pro.Pname = 'AL Rabwah' 
+  AND w.Hours >= 10; 
+```
+
+Output:
+![](./images/7.PNG)
+
+
+
+
 
 
 
