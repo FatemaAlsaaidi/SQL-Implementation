@@ -1,4 +1,4 @@
-# Aggregate Functions  Tasks
+# Aggregate Functions Tasks
 ### 1. Count the Total Number of Employees
 ```
 SELECT COUNT(*) AS Total_Employees 
@@ -33,6 +33,19 @@ from Employee
 
 Output:
 ![Highest_and_Lowest_Salary](img/4.png)
+
+# GROUP BY 
+### 1.  Group By Single Column (Employee name with total salary)
+```
+select sum(salary), name
+from Employee
+group by name
+```
+
+Output:
+![Group_By_Single_Column](img/5.png)
+
+
 
 
 
