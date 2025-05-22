@@ -25,6 +25,14 @@ from Employee
 Output:
 ![Average_Salary](img/3.png)
 
+### 4. Find the Highest and Lowest Salary
+```
+select max(salary) as Highest_Salary, min(salary) as Lowest_Salary
+from Employee
+```
+
+Output:
+![Highest_and_Lowest_Salary](img/4.png)
 
 
 
