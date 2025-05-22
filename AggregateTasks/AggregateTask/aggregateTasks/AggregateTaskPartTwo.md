@@ -45,6 +45,17 @@ group by name
 Output:
 ![Group_By_Single_Column](img/5.png)
 
+### 2.  Group By Multiple Columns (Student subject and year)
+```
+select subject, year, count(*) as Total_Students
+from Student
+group by subject, year
+
+``` 
+Output:
+![Group_By_Multiple_Columns](img/6.png)
+
+
 
 
 
