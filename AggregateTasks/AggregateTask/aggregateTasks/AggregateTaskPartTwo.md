@@ -1,4 +1,4 @@
-# Aggregate Functions Tasks
+﻿# Aggregate Functions Tasks
 ### 1. Count the Total Number of Employees
 ```
 SELECT COUNT(*) AS Total_Employees 
@@ -54,6 +54,19 @@ group by subject, year
 ``` 
 Output:
 ![Group_By_Multiple_Columns](img/6.png)
+
+# HAVING
+### 1.  Departments with total salary ≥ 100,000
+```
+select sum(salary) , department
+from Employee
+group by department
+having sum(salary) >= 100000
+
+``` 
+Output:
+![Departments_with_Total_Salary](img/7.png)
+
 
 
 
