@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\JoinTasks\\AirlineDatabase_JOINQueries\\AirlineDatabaseJOINQueries\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D646AE5-E0D2-4B7C-81B3-BB69C83B4474}|AirlineDatabaseJOINQueries.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\jointasks\\airlinedatabase_joinqueries\\airlinedatabasejoinqueries\\airlinedatabase joinqueries.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5D646AE5-E0D2-4B7C-81B3-BB69C83B4474}|AirlineDatabaseJOINQueries.csproj|solutionrelative:airlinedatabase joinqueries.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D646AE5-E0D2-4B7C-81B3-BB69C83B4474}|AirlineDatabaseJOINQueries.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\jointasks\\airlinedatabase_joinqueries\\airlinedatabasejoinqueries\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D646AE5-E0D2-4B7C-81B3-BB69C83B4474}|AirlineDatabaseJOINQueries.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AirlineDatabase JOINQueries.md",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\JoinTasks\\AirlineDatabase_JOINQueries\\AirlineDatabaseJOINQueries\\AirlineDatabase JOINQueries.md",
+              "RelativeDocumentMoniker": "AirlineDatabase JOINQueries.md",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\JoinTasks\\AirlineDatabase_JOINQueries\\AirlineDatabaseJOINQueries\\AirlineDatabase JOINQueries.md*",
+              "RelativeToolTip": "AirlineDatabase JOINQueries.md*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-21T11:04:39.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\JoinTasks\\AirlineDatabase_JOINQueries\\AirlineDatabaseJOINQueries\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\JoinTasks\\AirlineDatabase_JOINQueries\\AirlineDatabaseJOINQueries\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T11:03:04.876Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
