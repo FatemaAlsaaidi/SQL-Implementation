@@ -45,6 +45,18 @@ having (count(emp.SSN)) >= 2
 Output:
 ![' Show departments (Dept_ID)'](../img2/Agg.Company5.JPG)
 
+## Airpline Database 
+#### 1.  Count total flights in FLIGHT table.
+```
+select count(*) as total_of_flight from flight
+
+```
+output:
+
+!['total flights'](../img2/Agg.Airline1.JPG)
+
+
+
 
 
 
