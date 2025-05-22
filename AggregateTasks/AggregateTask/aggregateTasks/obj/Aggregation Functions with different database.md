@@ -34,6 +34,19 @@ Output:
 !['total salary per department'](../img2/Agg.Company4.JPG)
 
 
+#### 5. Show departments (Dept_ID) having more than 5 employees with their counts.
+```
+select count(emp.SSN) as Number_of_employee, emp.Dno
+from Employee emp
+group by emp.Dno
+having (count(emp.SSN)) >= 2
+```
+
+Output:
+![' Show departments (Dept_ID)'](../img2/Agg.Company5.JPG)
+
+
+
 
 
 
