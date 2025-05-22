@@ -24,6 +24,16 @@ output:
 !['Count employees in each department'](../img2/Agg.Company3.JPG)
 
 
+#### 4. Find total salary per department by joining Employees and Salaries.
+```
+select sum(emp.Salary) as Total_salary, dep.Dname
+from Employee emp left join Departments dep ON emp.Dno = dep.Dnum
+group by emp.Dno , dep.Dname
+```
+Output:
+!['total salary per department'](../img2/Agg.Company4.JPG)
+
+
 
 
 
