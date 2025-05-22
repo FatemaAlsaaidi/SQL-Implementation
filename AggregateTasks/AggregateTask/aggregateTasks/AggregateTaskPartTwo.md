@@ -67,6 +67,19 @@ having sum(salary) >= 100000
 Output:
 ![Departments_with_Total_Salary](img/7.png)
 
+### 2. Subjects with more than 1 student in any year
+```
+select count(*) as number_of_student, subject, year
+from student 
+group by subject, year
+having count(*)>1
+```
+Output:
+![Subject_with_count_student_](img/8.png)
+
+
+
+
 
 
 
