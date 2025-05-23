@@ -137,8 +137,81 @@ group by  Movies.ReleaseYear
 Output:
 !['Average Movie Duration '](img3/2.6.JPG)
 
+## Advanced Level (Challenging Scenarios) 
 
+7. Most Watched Movie 
+8. Users Who Watched More Than 100 Minutes 
+9. Total Watch Time per Genre 
+10. Identify Binge Watchers (Users Who Watched 2 or More Movies in One Day) 
+11. Genre Popularity (Total Watch Duration by Genre) 
+12. User Retention Insight: Number of Users Joined Each Month
 
+### 10. Most Watched Movie
+```
+select Top 1 sum(WH.WatchDuration) as Most_Watched_Movie , Movies.Title
+from WatchHistory WH join Movies
+on Movies.MovieID = WH.MovieID
+group by Movies.Title
+
+```
+Output:
+!['Most Watched Movie'](img3/3.1.JPG)
+
+## 11. Users Who Watched More Than 100 Minutes
+```
+select sum(WH.WatchDuration) as Minutes_Of_Watch , Users.FullName
+from WatchHistory WH join Users
+on Users.UserID = WH.UserID
+group by Users.FullName
+having sum(WH.WatchDuration) > 100
+
+```
+Output:
+!['Watched More Than 100 Minutes'](img3/3.2.JPG)
+
+## 12. Total Watch Time per Genre 
+```
+select sum(WH.WatchDuration) as Total_Watch_Time , Movies.Genre
+from WatchHistory WH join Movies
+on Movies.MovieID = WH.MovieID
+group by Movies.Genre
+
+```
+Output:
+!['Total Watch Time per Genre '](img3/3.3.JPG)
+## 13. Identify Binge Watchers (Users Who Watched 2 or More Movies in One Day) 
+```
+select count(WH.WatchID) AS MoviesWatched , WH.WatchDate, Users.FullName
+from WatchHistory WH join Users
+on Users.UserID = WH.UserID
+group by Users.FullName ,  WH.WatchDate
+having count(WH.WatchID) >=2
+
+```
+Output:
+!['Identify Binge Watchers'](img3/3.4.JPG)
+
+## 14. Genre Popularity (Total Watch Duration by Genre) 
+```
+SELECT Top 1 SUM(WH.WatchDuration) as TotalWatchDuration , Movies.Genre
+from WatchHistory WH join Movies
+on Movies.MovieID = WH.MovieID
+group by Movies.Genre
+ORDER BY 
+    TotalWatchDuration DESC;
+```
+Output:
+!['Genre Popularity'](img3/3.5.JPG) 
+
+## 15. User Retention Insight: Number of Users Joined Each Month
+```
+select count(UserID) as Number_of_Users, JoinDate
+from Users
+group by JoinDate
+
+```
+Output:
+!['User Retention Insight'](img3/3.6.JPG) 
 
 
 
