@@ -30,3 +30,26 @@
 ### 10. Upgrade your salary by 20 % of its last value.
 !['Upgrade your salary '](img/1.10.JPG)
 
+## University Database
+### 1. Display all student records. 
+!['all student records'](img/2.1.JPG)
+### 2. Show each student’s full name and their GPA as “GPA Score”. 
+!['full name and GPA'](img/2.2.JPG)
+### 3. List student names who enrolled before 2022. 
+!['enrolled before 2022'](img/2.3.JPG)
+
+### 4. Display names and ranks of all faculty members in the IT department. 
+!['faculty members in the IT department'](img/2.4.JPG)
+
+### 5. Show the department ID and name managed by faculty ID = 201045. 
+!['department ID and name'](img/2.5.JPG)
+
+### 6. Insert your data as a new student enrolled in program ID 2, student ID = 300045, GPA = 3.6. 
+!['new student data'](img/2.6.JPG)
+
+### 7.  Increase your GPA by 0.2.
+
+!['Increase your GPA'](img/2.7.JPG)	
+
+
+
