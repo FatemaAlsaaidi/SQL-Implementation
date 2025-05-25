@@ -24,4 +24,15 @@ select FullName, Email from Applicants
 ```
 !['Now use UNION ALL'](images/1.2.jpg)
 
+### 3. Find people who are in both tables.
+
+o You must use INTERSECT if supported, or simulate it using INNER JOIN on Email. 
+
+```
+select FullName, Email from Trainees 
+INTERSECT
+select FullName, Email from Applicants 
+
+```
+!['Find people who are in both tables'](images/1.3.jpg)
 
