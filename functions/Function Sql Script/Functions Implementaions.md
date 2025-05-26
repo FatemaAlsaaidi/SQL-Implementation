@@ -114,3 +114,43 @@ SELECT * FROM dbo.GetManagerDetails(10);
 ```
 
 !['inline function with join statement'](../img/1.5.jpg)
+
+### 6. Create multi-statements table-valued function that takes a string 
+If string='first name' returns student first name 
+If string='last name' returns student last name  
+If string='full name' returns Full Name from student table 
+Note: Use “ISNULL” function
+
+```
+CREATE FUNCTION dbo.GetStudentName (@Name VARCHAR(20))
+RETURNS @Result TABLE (Name VARCHAR(100))
+AS
+BEGIN
+    IF @Name = 'first name'
+    BEGIN
+        INSERT INTO @Result (Name)
+        SELECT ISNULL(St_Fname, 'N/A')
+        FROM Student;
+    END
+    ELSE IF @Name = 'last name'
+    BEGIN
+        INSERT INTO @Result (Name)
+        SELECT ISNULL(St_Lname, 'N/A')
+        FROM Student;
+    END
+    ELSE IF @Name = 'full name'
+    BEGIN
+        INSERT INTO @Result (Name)
+        SELECT 
+            ISNULL(St_Fname, '') + ' ' + ISNULL(St_Lname, '') 
+        FROM Student;
+    END
+    RETURN;
+END;
+SELECT * FROM dbo.GetStudentName('first name');
+SELECT * FROM dbo.GetStudentName('last name');
+SELECT * FROM dbo.GetStudentName('full name');
+
+
+```
+!['Mulistatement with if condition '](../img/1.6.jpg)
