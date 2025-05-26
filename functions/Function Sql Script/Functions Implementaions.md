@@ -35,3 +35,19 @@ SELECT * FROM dbo.Between_value(10, 30);
 
 ```
 !['a multi-statements table-valued function'](../img/1.2.jpg)
+
+### 3.  Create inline function that takes Student No and returns Department Name with Student full name. 
+```
+create function Dep_StudentName (@Student_ID int)
+returns table 
+as 
+return
+(select S.St_Fname + ' ' + S.St_Lname as Full_Name , Dep.Dept_Name
+from Student S , Department Dep)
+
+select * from Dep_StudentName(3)
+
+
+```
+!['inline function'](../img/1.3.jpg)
+
