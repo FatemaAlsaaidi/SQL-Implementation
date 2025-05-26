@@ -51,3 +51,40 @@ select * from Dep_StudentName(3)
 ```
 !['inline function'](../img/1.3.jpg)
 
+### 4. Create a scalar function that takes Student ID and returns a message to user  
+a. If first name and Last name are null then display 'First name & last name are null' 
+b. If First name is null then display 'first name is null' 
+c. If Last name is null then display 'last name is null' 
+d. Else display 'First name & last name are not null'
+```
+CREATE FUNCTION dbo.MessageToUser(@S_ID INT)
+RETURNS VARCHAR(100)
+AS
+BEGIN
+    DECLARE @Message VARCHAR(100);
+    DECLARE @FName VARCHAR(50);
+    DECLARE @LName VARCHAR(50);
+
+    SELECT @FName = St_Fname, @LName = St_Lname
+    FROM Student
+    WHERE St_Id = @S_ID;
+
+    IF (@FName IS NULL AND @LName IS NULL)
+        SET @Message = 'First name & last name are null';
+    ELSE IF (@FName IS NULL)
+        SET @Message = 'First name is null';
+    ELSE IF (@LName IS NULL)
+        SET @Message = 'Last name is null';
+    ELSE
+        SET @Message = 'First name & last name are not null';
+
+    RETURN @Message;
+END;
+
+SELECT dbo.MessageToUser (2) AS ResultMessage;
+
+
+```
+
+!['scalar function with if condition '](../img/1.4.jpg)
+
