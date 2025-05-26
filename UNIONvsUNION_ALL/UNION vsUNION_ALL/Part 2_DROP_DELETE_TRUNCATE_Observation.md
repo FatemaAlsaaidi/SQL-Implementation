@@ -20,3 +20,17 @@ select * from Applicants
 ```
 !['TRUNCATE TABLE Applicants'](images/2.2.jpg)
 
+
+#### 3. Try DROP TABLE Applicants. 
+
+o What happens if you run a SELECT after that? 
+
+delete the rows and structure of table
+
+```
+DROP TABLE Applicants
+
+```
+!['DROP TABLE Applicants'](images/2.3.jpg)
+
+
