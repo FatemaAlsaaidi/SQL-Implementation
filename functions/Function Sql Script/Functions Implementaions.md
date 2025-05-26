@@ -88,3 +88,29 @@ SELECT dbo.MessageToUser (2) AS ResultMessage;
 
 !['scalar function with if condition '](../img/1.4.jpg)
 
+### 5. Create inline function that takes integer which represents manager ID and displays department name, Manager Name and hiring date 
+
+```
+CREATE FUNCTION dbo.GetManagerDetails (@ManagerID INT)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT 
+        D.Dept_Name,
+        Ins.Ins_Name AS ManagerName,
+        D.Manager_hiredate
+    FROM 
+        Department D
+    INNER JOIN 
+        Instructor Ins  ON D.Dept_Id= Ins.Dept_Id
+    WHERE 
+        Ins.Dept_Id = @ManagerID
+);
+SELECT * FROM dbo.GetManagerDetails(10);
+
+
+
+```
+
+!['inline function with join statement'](../img/1.5.jpg)
