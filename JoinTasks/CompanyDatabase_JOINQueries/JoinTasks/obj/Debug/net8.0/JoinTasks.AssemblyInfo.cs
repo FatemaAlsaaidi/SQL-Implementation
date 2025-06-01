@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JoinTasks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44a8467dc1b49363a33305307bd85c1b380b63df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5f4ac115c5f7b20a973cc7dc95def3ef9db26db")]
 [assembly: System.Reflection.AssemblyProductAttribute("JoinTasks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JoinTasks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

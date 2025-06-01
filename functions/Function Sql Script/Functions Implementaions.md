@@ -1,4 +1,4 @@
-# Functions & Variables & Control of flow statement’s Task
+# Functions & Variables & Control of flow statementï¿½s Task
 ### 1. Create a scalar function that takes date and returns Month name of that date.
 ```
 create function dbo.Month_Name(@date0 as date)
@@ -119,7 +119,7 @@ SELECT * FROM dbo.GetManagerDetails(10);
 If string='first name' returns student first name 
 If string='last name' returns student last name  
 If string='full name' returns Full Name from student table 
-Note: Use “ISNULL” function
+Note: Use ï¿½ISNULLï¿½ function
 
 ```
 CREATE FUNCTION dbo.GetStudentName (@Name VARCHAR(20))
@@ -154,3 +154,56 @@ SELECT * FROM dbo.GetStudentName('full name');
 
 ```
 !['Mulistatement with if condition '](../img/1.6.jpg)
+
+### 7. Create a cursor for Employee table that increases Employee salary by 10% if Salary <3000 and increases it by 20% if Salary >=3000. Use company DB
+```
+USE Company_SD; 
+select * from Employee
+-- 1. Declare the variables to be used with the cursor.
+DECLARE @SSN INT;
+DECLARE @CurrentSalary DECIMAL(10, 2);
+DECLARE @NewSalary DECIMAL(10, 2);
+
+-- 2. Declare Cursor
+DECLARE EmployeeSalaryCursor CURSOR FOR
+SELECT SSN, Salary
+    FROM Employee
+    ORDER BY SSN; -- It is preferable to arrange the data to ensure a logical sequence when processing the index.
+
+-- 3. Open the Cursor
+OPEN EmployeeSalaryCursor;
+
+-- 4. Fetch frist row fron Cursor
+FETCH NEXT FROM EmployeeSalaryCursor INTO @SSN, @CurrentSalary;
+
+-- 5. start loop for preprocess every row
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    -- 6. Salary increase process
+    IF @CurrentSalary < 3000
+    BEGIN
+        SET @NewSalary = @CurrentSalary * 1.10; 
+    END
+    ELSE
+    BEGIN
+        SET @NewSalary = @CurrentSalary * 1.20; 
+    END;
+
+    -- 7. Salary Update in employee table 
+    UPDATE Employee
+    SET Salary = @NewSalary
+    WHERE SSN = @SSN;
+
+    -- 8. fetch second row from cursor
+    FETCH NEXT FROM EmployeeSalaryCursor INTO @SSN, @CurrentSalary;
+END;
+
+-- 9. close cursor
+CLOSE EmployeeSalaryCursor;
+
+-- 10. Unallocate the Cursor to free up resources.
+DEALLOCATE EmployeeSalaryCursor;
+
+PRINT 'Employee Salary successfully update';
+
+```

@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\unionvsunion_all\\union vsunion_all\\topics.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|solutionrelative:topics.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\unionvsunion_all\\union vsunion_all\\part 3self-discovery \u0026 applied exploration.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|solutionrelative:part 3self-discovery \u0026 applied exploration.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\unionvsunion_all\\union vsunion_all\\part 2_drop_delete_truncate_observation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|solutionrelative:part 2_drop_delete_truncate_observation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\unionvsunion_all\\union vsunion_all\\delete||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|solutionrelative:delete||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\unionvsunion_all\\union vsunion_all\\part 2 drop||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|solutionrelative:part 2 drop||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\unionvsunion_all\\union vsunion_all\\part 1_union practice .md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|solutionrelative:part 1_union practice .md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|c:\\users\\codeline\\desktop\\full-stack .net\\sql_implementaion\\sql-implementation\\unionvsunion_all\\union vsunion_all\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5023C2E8-8696-4ABC-845D-F2454BC95E72}|UNION vsUNION_ALL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Part 3Self-Discovery \u0026 Applied Exploration.md",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 3Self-Discovery \u0026 Applied Exploration.md",
+              "RelativeDocumentMoniker": "Part 3Self-Discovery \u0026 Applied Exploration.md",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 3Self-Discovery \u0026 Applied Exploration.md",
+              "RelativeToolTip": "Part 3Self-Discovery \u0026 Applied Exploration.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-26T05:55:35.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Part 2_DROP_DELETE_TRUNCATE_Observation.md",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 2_DROP_DELETE_TRUNCATE_Observation.md",
+              "RelativeDocumentMoniker": "Part 2_DROP_DELETE_TRUNCATE_Observation.md",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 2_DROP_DELETE_TRUNCATE_Observation.md",
+              "RelativeToolTip": "Part 2_DROP_DELETE_TRUNCATE_Observation.md",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-25T12:12:18.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DELETE",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\DELETE",
+              "RelativeDocumentMoniker": "DELETE",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\DELETE",
+              "RelativeToolTip": "DELETE",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-25T12:11:25.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Part 2 DROP",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 2 DROP",
+              "RelativeDocumentMoniker": "Part 2 DROP",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 2 DROP",
+              "RelativeToolTip": "Part 2 DROP",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-25T12:11:24.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Part 1_UNION Practice .md",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 1_UNION Practice .md",
+              "RelativeDocumentMoniker": "Part 1_UNION Practice .md",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Part 1_UNION Practice .md",
+              "RelativeToolTip": "Part 1_UNION Practice .md",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-25T10:54:39.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Topics.md",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Topics.md",
+              "RelativeDocumentMoniker": "Topics.md",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Topics.md",
+              "RelativeToolTip": "Topics.md",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwB4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-25T10:29:42.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\CodeLine\\Desktop\\Full-Stack .Net\\Sql_Implementaion\\SQL-Implementation\\UNIONvsUNION_ALL\\UNION vsUNION_ALL\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T10:27:37.756Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
